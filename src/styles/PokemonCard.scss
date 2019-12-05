@@ -1,0 +1,38 @@
+.pokemon-card-wrapper {
+  color: #718096;
+  display: flex;
+  width: 700px;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+.pokemon-card {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 20px 40px -10px rgba(113, 128, 150, 0.7);
+  padding: 16px 0;
+  border: 1px solid #edf2f7;
+  width: 100%;
+
+  &-img {
+    height: 100px;
+    padding: 0 12px;
+  }
+}
+
+.pokemon-name {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #19202c;
+}
+
+.ability-chip {
+  background-color: #edf2f7;
+  margin: 8px;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  color: #495568;
+  font-weight: bold;
+}

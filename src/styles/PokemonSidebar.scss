@@ -1,0 +1,36 @@
+.pokedex {
+    background-color: #732A2A;
+    color: white;
+    text-align: center;
+    padding: 24px 32px;
+
+    &-card {
+        background-color: white;
+        width: 100%;
+        margin: 8px 0;
+        border-radius: 4px;
+        color: black;
+        padding: 6px;
+        text-transform: capitalize;
+    }
+
+    & > h1 {
+        font-weight: normal;
+    }
+
+    &-buttons {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 16px;
+    }
+
+    &-btn {
+        background-color: #F56565;
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+}
