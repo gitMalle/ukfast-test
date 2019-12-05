@@ -59,15 +59,14 @@ Installation
 
 1. Clone repo
 2. Run npm install to install dependencies.
-3. //TODO
-4. //TODO
-
+3. run **npm start** to start development server on port 3000
 
 Build
 ---
 
-Depending on your methodology and the Javascript framework (if any) that you choose to use. Please define how this web page should be compiled for development and production.
-i.e. using `gulp`
+I used Webpack, which is the most commmon used bundler with React. I set up the project similar to [create-react-app](https://github.com/facebook/create-react-app).
+All the configuration is hidden behind react-scripts, which makes setting up a project quick and easy. This configuration can be customized at any point with the eject script.
+To use it in production the project can be built with: **npm run build**.
 
 Submission
 ---
