@@ -12,6 +12,11 @@
         color: black;
         padding: 6px;
         text-transform: capitalize;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #EEE;
+        }
     }
 
     & > h1 {

@@ -3,7 +3,7 @@ import "../styles/PokemonSidebar.scss";
 
 export const PokemonSidebar = props => {
   const [page, setPage] = useState(0);
-  const { pokemon } = props;
+  const { pokemon, onSelect } = props;
 
   // number of items per page
   const OFFSET = 17;
@@ -15,7 +15,7 @@ export const PokemonSidebar = props => {
       <p>List of Pokémon</p>
       {/* slice 17 items from array at the current page  */}
       {pokemon.slice(page * OFFSET, page * OFFSET + OFFSET).map(pokemon => (
-        <div key={pokemon.name} className="pokedex-card">
+        <div key={pokemon.name} className="pokedex-card" onClick={() => onSelect(pokemon)}>
           {pokemon.name}
         </div>
       ))}

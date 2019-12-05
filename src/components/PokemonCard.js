@@ -28,8 +28,8 @@ export const PokemonCard = props => {
         <div className="px-4">
           <p>Abilities</p>
           <div className='d-flex flex-wrap'>
-            {pokemon.abilities.map(ability => (
-                <div className='ability-chip'>
+            {pokemon.abilities.map((ability, index) => (
+                <div key={index} className='ability-chip'>
                     {ability.ability.name}
                 </div>
             ))}
